@@ -1,0 +1,14 @@
+body{
+    /* 속성명 : 속성값; */
+    background-color: lime;
+    color:blue;
+}
+a{
+    text-decoration: none;
+    color : darkorange;
+}
+/* 마우스를 올렸을때 */
+a:hover{ 
+    text-decoration: line-through;
+    color: white;
+}

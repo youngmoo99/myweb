@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out0.css">
+    <style>
+        td { 
+            background-color: aquamarine;
+            color:brown;
+            font-weight: bold;
+            font-family: 궁서;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <form action="check">
+        <h3>로그인 화면</h3>
+        <table border="1">
+            <tr align="center">
+                <td>아이디</td>
+                <td><input type="text" name="id"></td>
+            </tr>
+
+            <tr align="center">
+                <td>패스워드</td>
+                <td><input type="password" name="pwd" ></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" style="background: purple;">
+                    <input type="submit" value="서버로 전송">
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+
+    <form action="member">
+        <h3>회원가입 화면</h3>
+        <table border="1">
+            <tr align="center">
+                <td>가입할 ID</td>
+                <td><input type="text" name="myid"></td>
+            </tr>
+            <tr align="center">
+                <td>가입할 패스워드</td>
+                <td><input type="password" name="mypwd"></td>
+            </tr>
+            <tr align="center">
+                <td>성별</td>
+                <td><input type="radio" name="g" checked>남
+                    <input type="radio" name="g">여
+                </td>
+            </tr>
+            <tr align="center">
+                <td>취미</td>
+                <td>
+                    <input type="checkbox" name="h" value="run" checked>달리기
+                    <input type="checkbox" name="h" value="youtube">동영상보기
+                    <input type="checkbox" name="h" value="internet">인터넷세팅 
+                </td>
+            </tr>
+            <!-- <tr align="center">
+                <td>전화번호 통신사</td>
+                <td>
+                    <select>
+
+                        
+                    </select>
+                    
+                </td>
+            </tr>
+            <tr align="center">
+                <td>취미</td>
+                <td>
+                    <input type="checkbox" name="h" value="run" checked>달리기
+                    <input type="checkbox" name="h" value="youtube">동영상보기
+                    <input type="checkbox" name="h" value="internet">인터넷세팅 
+                </td>
+            </tr>
+            <tr align="center">
+                <td>취미</td>
+                <td>
+                    <input type="checkbox" name="h" value="run" checked>달리기
+                    <input type="checkbox" name="h" value="youtube">동영상보기
+                    <input type="checkbox" name="h" value="internet">인터넷세팅 
+                </td>
+            </tr>
+            <tr align="center">
+                <td>취미</td>
+                <td>
+                    <input type="checkbox" name="h" value="run" checked>달리기
+                    <input type="checkbox" name="h" value="youtube">동영상보기
+                    <input type="checkbox" name="h" value="internet">인터넷세팅 
+                </td>
+            </tr> -->
+           
+
+        </table>
+    </form>
+</center>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    background-color: yellow;
+    color: green;
+    font-size: 15px;
+
+}
+h3 {
+    color:blue;
+}
+button{
+    background-color: lime;
+    color:darkblue;
+}
+
+input{
+    background-color: gainsboro;
+}
+.dayday{ 
+    background: pink;
+    color: blue;
+}
+.mymember{ 
+    background-color: black;
+    color: white;
+}
+#myname{
+    background-color: blue;
+    color: aquamarine;
+}
+#myemail {
+    background-color: aquamarine;
+    color:blue;
+}
+input{
+    text-align: center;
+}

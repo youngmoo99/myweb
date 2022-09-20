@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+}
+input{
+    text-align: center;
+}
+table {
+    background: yellow;
+}
+.heads {
+    background: lime;
+}
+.left{ 
+    background: white;
+    color:blue;
+}
+.inputs {
+    background: pink;
+}
+button {
+    background: whitesmoke;
+    color: green;
+    width: 150px;
+    height: 33px;
+    font-size: 21px;
+}
+button:hover{ 
+    color:blue;
+}
+
+
