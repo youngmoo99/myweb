@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam2.html</title>
+    <style>
+        #checked { 
+            background-color: pink;
+            color: blue;
+            width: 100px;
+        }
+        #samed { 
+            background-color: lawngreen;
+            color:white;
+            width: 110px;
+        }
+        #d1{ 
+            background-color: yellow;
+            width : 300px;
+            height: 60px;
+            color:red; 
+            font-size: 50px;
+            float:left;
+        }
+        
+        
+    </style>
+    <script>
+        function id_length() {
+            user_id = document.getElementById('user_id').value 
+            if(user_id.length >=5) {
+                result ='5글자 이상입니다. 유효합니다'
+            }
+            else {
+                result ='5글자 미만입니다. 재입력해주세요.'
+            }
+            d1.innerHTML = result
+
+        }
+        function pwd_same() {
+            user_pwd = document.getElementById('user_pwd').value 
+            user_pwd2 = document.getElementById('user_pwd2').value 
+            if(user_pwd == user_pwd2) {
+                result1 = '일치!!!!!'
+                result2 = '<img src=./image/poketmon.png width=200 height=200">'
+                
+            }
+            else{ 
+                result1 ="불일치!!!"
+            }
+            d1.innerHTML = result1
+            d2.innerHTML = result2
+        }
+
+       
+    </script>
+
+</head>
+<body>
+    <h2>자바 스크립트 테스트 </h2>
+    <hr style="width:500px; height:3px; background-color: gainsboro; float:left;"> <br>
+    
+        아이디 : <input type="text" name="user_id" id="user_id"> <button id="checked" onclick="id_length()">글자수 체크</button><br>
+        패스워드 : <input type="text" name="user_pwd" id="user_pwd"> <br>
+        패스워드2 : <input type="text" name="user_pwd2" id="user_pwd2"> <button id="samed" onclick="pwd_same()">패스워드 동일</button><br>
+    
+    <hr style="width:500px; height:3px; background-color: gainsboro; float:left;"><br>
+    <div id="d1"></div>
+
+        <div id="d2">
+    </div>
+    
+   
+
+</body>
+</html>
