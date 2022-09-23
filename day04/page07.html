@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        // $ ==> document(html의 body)
+        // 제이쿼리에서는 익명함수를 많이씀
+        // 브라우저는 html 문서를 ram dom tree구조를 가지고 ram에 저장
+        // 브라우저가 ram에 dom tree구조를 다 저장했으면 옆에 있는 익명함수 내용대로 처리 
+
+        $(function() {
+            $('#b1').click(function() {
+                $.ajax({
+                    url: "tour.html",
+                    success : function (pop_food) {
+                        
+                        $('#d1').append(pop_food)  
+                    }
+                })
+            })
+            $('#b2').click(function () {
+                //비동기 통신 ajax
+                $.ajax({ // 키값은 정해져있음 url, success
+                    url : "ok.html",
+                    success : function (res) {
+                        $('#d2').append(res)  
+
+                    } 
+                })
+            })
+            $('#b3').click(function () {
+                $.ajax({
+                    url: "weather.html",
+                    success : function (weathers) {
+                        $('#d3').append(weathers)                
+                    }
+                })
+                
+            })
+
+           
+        })
+    </script>
+
+</head>
+<body>
+    <button id="b1">내 서버 공공portal로 통신하기(tour)</button><br>
+    <button id="b2">내 서버 ok.html로 통신하기</button><br>
+    <button id="b3">내 서버 weather.html로 통신하기</button><br>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</body>
+</html>
